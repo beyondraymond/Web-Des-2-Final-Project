@@ -1,0 +1,130 @@
+<html>
+<head>
+    <title>Our Team - Raymond</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="main">
+        <section id="nav-bar">
+            <nav class="navbar navbar-expand-lg navbar-light">
+                <a class="navbar-brand" href="#"><img src="assets/logo-inverted.png" alt="" srcset=""></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <i class="fa fa-bars"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                  <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                      <a class="nav-link" href="index.html">HOME <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="members-page.html">MEMBERS</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="about-page.html">ABOUT US</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="gallery-page.html">GALLERY</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact-page.html">CONTACT US</a>
+                    </li>
+                  </ul>
+                </div>
+              </nav>
+        </section>
+
+        <div class="information">
+            <div class="overlay"></div>
+            <img src="assets/pic1.png" class="mobile">
+            <div id="circle">
+                <div class="feature one">
+                    <img src="assets/full-name.png" alt="">
+                    <div>
+                        <h1>John Raymond M. Arriesgado</h1>
+                        <p>FULL NAME</p>
+                    </div>
+                </div>
+                <div class="feature two">
+                    <img src="assets/education.png" alt="">
+                    <div>
+                        <h2>Studies Web and Mobile Application <br> at FEU Institute of Technology</h2>
+                        <p>EDUCATIONAL BACKGROUND</p>
+                    </div>
+                </div>
+                <div class="feature three">
+                    <div>
+                        <h1>Skills</h1>
+                        <section id="skills-bar">
+                            <div class="skills">
+                                <div class="skill">
+                                    <div class="skill-name">HTML</div>
+                                    <div class="skill-bar">
+                                        <div class="skill-per" per="70"></div>
+                                    </div>
+                                </div>
+                                <div class="skill">
+                                    <div class="skill-name">CSS</div>
+                                    <div class="skill-bar">
+                                        <div class="skill-per" per="65"></div>
+                                    </div>
+                                </div>
+                                <div class="skill">
+                                    <div class="skill-name">JAVASCRIPT</div>
+                                    <div class="skill-bar">
+                                        <div class="skill-per" per="60"></div>
+                                    </div>
+                                </div>
+                            </div>
+                    
+                            <script>
+                                $('.skill-per').each(function(){
+                                    var $this = $(this);
+                                    var per = $this.attr('per');
+                                    $this.css("width", per+'%')
+                                })
+                            </script>
+                        </section>
+                    </div>
+                </div>
+                <div class="feature four">
+                    <img src="assets/achievements.png" alt="">
+                    <div>
+                        <h2>2nd Top Performing ITWMA Student <br> awarded on the 12th day of July, 2019</h2>
+                        <p>NOTABLE ACHIEVEMENTS</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="controls">
+            <img src="assets/arrow.png" id="upBtn">
+            <h3>DETAILS</h3>
+            <img src="assets/arrow.png" id="downBtn">
+        </div>
+    </div>
+    
+    <script>
+        var circle = document.getElementById("circle");
+        var upBtn = document.getElementById("upBtn");
+        var downBtn = document.getElementById("downBtn");
+
+        var rotateValue = circle.style.transform;
+        var rotateSum;
+
+        upBtn.onclick = function(){
+            rotateSum = rotateValue + "rotate(-90deg)";
+            circle.style.transform = rotateSum;
+            rotateValue = rotateSum;
+        }
+        downBtn.onclick = function(){
+            rotateSum = rotateValue + "rotate(90deg)";
+            circle.style.transform = rotateSum;
+            rotateValue = rotateSum;
+        }
+    </script>
+</body>
+</html>

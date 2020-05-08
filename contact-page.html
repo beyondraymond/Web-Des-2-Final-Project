@@ -1,0 +1,113 @@
+<html>
+<head>
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script>
+        function validateForm() {
+        var fname = document.forms["contact-form"]["fname"].value;
+        var lname = document.forms["contact-form"]["lname"].value;
+        var email = document.forms["contact-form"]["email"].value;
+        var message = document.forms["contact-form"]["message"].value;
+        if (fname == "") {
+            swal("Form Error!", "First name must be filled out!", "error");
+            return false;
+            }
+        else if (lname == "") {
+            swal("Form Error!", "Last name must be filled out!", "error");
+            return false;
+            }
+        else if (email == "") {
+            swal("Form Error!", "Email Address must be filled out!", "error");
+            return false;
+            }
+        else if (message == "") {
+            swal("Form Error!", "The message box is empty!", "error");
+            return false;
+            }
+        else if(fname != "" && lname != "" && email != "" && message != ""){
+            swal({
+            title: "Are you sure?",
+            text: "Once sent, you will not be able to edit your message!",
+            icon: "warning",
+            buttons: true
+            })
+            .then((confirmation) => {
+            if (confirmation) {
+                swal("Message sent!", {
+                icon: "success",
+                });
+                return true;
+            } else {
+                swal("Message not sent!");
+                return false;
+            }
+            });
+        }
+        }
+    </script>
+</head>
+
+<body>
+    <section id="nav-bar">
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <a class="navbar-brand" href="#"><img src="assets/LOGO5.png" alt="" srcset=""></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="fa fa-bars"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                  <a class="nav-link" href="index.html">HOME <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="members-page.html">MEMBERS</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="about-page.html">ABOUT US</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="gallery-page.html">GALLERY</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contact-page.html">CONTACT US</a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+    </section>
+    
+    <!--CONTACT PAGE-->
+    <section id="banner">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 contact-form">
+                    <h1>Hi There!</h1>
+                    <h2>We're happy to hear from you!</h2>
+
+                    <form name="contact-form" action="" method="POST" >
+                        <input name="fname" type="text" class="form-control1" placeholder="First Name"><br>
+            
+                        <input name="lname" type="text" class="form-control1" placeholder="Last Name"><br>
+            
+                        <input name="email" type="email" class="form-control1" placeholder="Your Email"><br>
+            
+                        <textarea name="message" class="form-control1"  placeholder="Message" rows="4"></textarea><br>
+            
+                        <input type="button" class="form-control1 submit" value="SEND MESSAGE" onclick="return validateForm()">
+                    </form>
+                </div>
+
+                <div class="col-md-6 text-center">
+                    <img src="assets/contact-us-banner.png" class="img-fluid">
+                </div>
+            </div>
+        </div>
+        <img src="assets/wave1.png" class="bottom-img" alt="">
+    </section>
+</body>
+</html>

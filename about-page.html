@@ -1,0 +1,102 @@
+<html>
+<head>
+    <title>About Us</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    
+</head>
+<body class="about-body">
+    <section id="nav-bar">
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <a class="navbar-brand" href="#"><img src="assets/logo5.png" alt="" srcset=""></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="fa fa-bars"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                  <a class="nav-link" href="index.html">HOME <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="members-page.html">MEMBERS</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="about-page.html">ABOUT US</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="gallery-page.html">GALLERY</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contact-page.html">CONTACT US</a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+    </section>
+    <div id="img-box" class="small">
+        <div class="shadow1"></div>
+        <div class="shadow2"></div>
+        <img src="assets/Slide1.PNG" id="small-Img">
+    </div>
+    <div class="imageList">
+        <h2>SERVICES OFFERED</h2>
+        <ul>
+            <li onclick="onWebsite()">WEB DEVELOPMENT</li>
+            <li onclick="onMobileApp()">APP DEVELOPMENT</li>
+            <li onclick="onMarketing()">DIGITAL MARKETING</li>
+            <li onclick="onSoftware()">GRAPHICS DESIGNING</li>
+        </ul>
+    </div>
+    <div class="btn-box" onclick="imageSize()">
+        <span id="btnIcon">&#10005</span>
+    </div>
+
+    <script>
+        var smallImg = document.getElementById("small-Img");
+        var imgBox = document.getElementById("img-box");
+        var menuIcon = document.getElementById("btnIcon")
+
+        function onWebsite(){
+            smallImg.src = "assets/Slide1.PNG";
+            menuIcon.innerHTML = "&#9776";
+            menuIcon.style.color = "black";
+            imgBox.className = "full";
+        }
+        function onMobileApp(){
+            smallImg.src = "assets/Slide5.PNG";
+            menuIcon.innerHTML = "&#9776";
+            menuIcon.style.color = "black";
+            imgBox.className = "full";
+        }
+        function onMarketing(){
+            smallImg.src = "assets/Slide3.PNG";
+            menuIcon.innerHTML = "&#9776";
+            menuIcon.style.color = "black";
+            imgBox.className = "full";
+        }
+        function onSoftware(){
+            smallImg.src = "assets/Slide4.PNG"; 
+            menuIcon.innerHTML = "&#9776";
+            menuIcon.style.color = "black";
+            imgBox.className = "full";
+        }
+
+        function imageSize(){
+            if(imgBox.className == "small"){
+                imgBox.className = "full";
+                menuIcon.innerHTML = "&#9776";
+                menuIcon.style.color = "black";
+            }
+            else{
+                imgBox.className = "small";
+                menuIcon.innerHTML = "&#10005";
+                menuIcon.style.color = "#fff";
+            }
+        }
+    </script>
+</body>
+</html>

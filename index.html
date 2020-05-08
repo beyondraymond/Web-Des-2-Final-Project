@@ -1,0 +1,298 @@
+<html>
+<head>
+    <title>Welcome Back To My PortFolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+    <link rel="stylesheet" href="dist/css/lightbox.min.css">
+    <link rel="stylesheet" href="swiper.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <section id="nav-bar">
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <a class="navbar-brand" href="#"><img src="assets/LOGO5.png" alt="" srcset=""></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="fa fa-bars"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                  <a class="nav-link" href="#top">HOME <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#members">MEMBERS</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#about-us">ABOUT US</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#past-project">GALLERY</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#social-media">CONTACT US</a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+    </section>
+
+    <!--Banner Section--->
+    <section id="banner">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 banner-circle">
+                    <p class="banner-text" style="margin-top: 100px;">HEY THERE!</p>
+                    <p class="banner-title">I'M JOHN RAYMOND ARRIESGADO</p>
+                    <p class="banner-text">AND I'M AN ASPIRING WEB DEVELOPER</p>
+                    <button type="button" class="btn btn-primary"> <a href="#carousel">VIEW PORTFOLIO</a></button>
+                </div>
+
+                <div class="col-md-6 text-center">
+                    <img src="assets/pic1.png" class="banner-img img-fluid">
+                </div>
+            </div>
+        </div>
+        <img src="assets/wave1.png" class="bottom-img" alt="">
+    </section>
+
+    <!--MEMBERS SECTION-->
+    <section id="members">
+      <div class="container text-center">
+        <h1 class="title">OUR TEAM</h1>
+        <div class="row text-center">
+          <div class="col-md-4 member-info">
+            <img src="assets/pic2.jpg" alt="" class="member-img">
+            <h4>Mary Roselle Tarrega</h4>
+            <button class="btn btn-primary">Get To Know Her</button>
+          </div>
+          <div class="col-md-4 member-info">
+            <img src="assets/pic1.png" alt="" class="member-img">
+            <h4>Raymond Arriesgado</h4>
+            <button class="btn btn-primary" onclick="location.href='members-page.html'">Get To Know Him</button>
+          </div>
+          <div class="col-md-4 member-info">
+            <img src="assets/pic3.jpg" alt="" class="member-img">
+            <h4>Gae Mari Sumugat</h4>
+            <button class="btn btn-primary">Get To Know Her</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!---ABOUT US--->
+    <section id="about-us">
+      <div class="container">
+        <h1 class="title text-center">WHY CHOOSE US?</h1>
+        <div class="row">
+          <div class="col-md-6 about-us-info">
+            <p class="about-title">Services tailored to your digital needs.</p>
+            <ul>
+              <li>Web Development</li>
+              <li>App Development</li>
+              <li>Digital Marketing</li>
+              <li>Graphic Designing</li>
+            </ul>
+            <button type="button" class="btn btn-primary" onclick="location.href='about-page.html'">LEARN MORE</button>
+          </div>
+          <div class="col-md-6">
+            <img src="assets/about-us.png" height="500px">
+          </div>
+        </div>
+      </div>
+
+    </section>
+
+    <!--Carousel Section-->
+    <section id="carousel">
+      <div class="container text-center">
+        <h1 class="title">FEATURED PROJECTS</h1>
+
+        <div id="carousel-proper" class="carousel slide" data-ride="carousel">
+          <ol class="carousel-indicators">
+            <li data-target="#carousel-proper" data-slide-to="0" class="active"></li>
+            <li data-target="#carousel-proper" data-slide-to="1"></li>
+            <li data-target="#carousel-proper" data-slide-to="2"></li>
+          </ol>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              
+              <section class="proj1">
+                <div class="container">
+                  <div class="row">
+                    <div class="col-md-6 text-left">
+                      <p class="banner-text" style="margin-top: 180px; margin-bottom: 0px;"> NEED SKINCARE?</p>
+                      <img src="assets/pampermnl-logo.png" width="400px">
+                      <p class="banner-text">YOUR ONE-STOP SHOP FOR KOREAN SKINCARE PRODUCTS</p>
+                      <button type="button" class="btn btn-primary" onClick="parent.open('https://pampermnl.netlify.app')"> GO TO SITE </button>
+                    
+                  </div>
+                  </div>
+                </div>
+              </section>
+              
+            </div>
+            <div class="carousel-item">
+
+              <section class="proj2">
+                <h1>POP IN THE LOOP</h1>
+                <h2>KEEPING YOU INFORMED OF THE LATEST POP DEETS</h2>
+                <button type="button" class="btn btn-primary" onClick="parent.open('https://beyondraymond-html5exercise.netlify.com')"> GO TO SITE </button>
+              </section>
+
+            </div>
+            <div class="carousel-item">
+              
+              <section class="proj3">
+                <button type="button" class="btn btn-primary" onClick="parent.open('Arriesgado_le3 - CSS Practice with Infographics/rose_embedded.html')"> GO TO SITE </button>
+              </section>
+
+            </div>
+          </div>
+          <a class="carousel-control-prev" href="#carousel-proper" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="carousel-control-next" href="#carousel-proper" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section id="past-project">
+      <div class="container text-center">
+        <h1 class="title">PAST PROJECTS</h1>
+        <h5>CLICK THE IMAGE TO VIEW • SWIPE LEFT TO VIEW MORE</h5>
+        <button class="btn btn-primary" onclick="location.href='gallery-page.html'">VIEW ALL PROJECTS</button>
+
+      <!-- Swiper -->
+      <div class="swiper-container">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <a href="assets/past-project1.png" data-lightbox="image-1" data-title="Magazine Layout">
+              <div class="imgBox">
+                <img src="assets/past-project1.png" alt="">
+              </div>
+            </a>
+          </div>
+          <div class="swiper-slide">
+            <a href="assets/past-project2.png" data-lightbox="image-1" data-title="Magazine Layout">
+              <div class="imgBox">
+                <img src="assets/past-project2.png" alt="">
+              </div>
+            </a>
+          </div>
+          <div class="swiper-slide">
+            <a href="assets/past-project4.png" data-lightbox="image-1" data-title="Magazine Layout">
+              <div class="imgBox">
+                <img src="assets/past-project4.png" alt="">
+              </div>
+            </a>
+          </div>
+          <div class="swiper-slide">
+            <a href="assets/past-project3.png" data-lightbox="image-1" data-title="Magazine Layout">
+              <div class="imgBox">
+                <img src="assets/past-project3.png" alt="">
+              </div>
+            </a>
+          </div>
+          <div class="swiper-slide">
+            <a href="assets/past-project5.png" data-lightbox="image-1" data-title="Magazine Layout">
+              <div class="imgBox">
+                <img src="assets/past-project5.png" alt="">
+              </div>
+            </a>
+          </div>
+        </div>
+        <!-- Add Pagination -->
+        <div class="swiper-pagination"></div>
+      </div>
+
+      <!-- Swiper JS -->
+      <script src="swiper.min.js"></script>
+
+      <!-- Initialize Swiper -->
+      <script>
+        var swiper = new Swiper('.swiper-container', {
+          effect: 'coverflow',
+          grabCursor: true,
+          centeredSlides: true,
+          slidesPerView: 'auto',
+          coverflowEffect: {
+            rotate: 50,
+            stretch: 0,
+            depth: 100,
+            modifier: 1,
+            slideShadows : true,
+          },
+          pagination: {
+            el: '.swiper-pagination',
+          },
+        });
+      </script>
+      </div>
+      <script src="dist/js/lightbox-plus-jquery.js"></script>
+      <script>
+        lightbox.option({
+          'disableScrolling': true,
+          'maxHeight': 650,
+          'positionFromTop' : 30
+        })
+      </script>
+    </section>
+    
+    <!--SOCIAL MEDIA SECTION-->
+    <section id="social-media">
+      <div class="container text-center">
+        <p>REACH US ON THE FOLLOWING SOCIAL MEDIA</p>
+        <div class="social-icons">
+          <a href="#"><img src="assets/social-media-1.png" alt=""></a>
+          <a href="#"><img src="assets/social-media-2.png" alt=""></a>
+          <a href="#"><img src="assets/social-media-3.png" alt=""></a>
+          <a href="#"><img src="assets/social-media-4.png" alt=""></a>
+          <a href="#"><img src="assets/social-media-5.png" alt=""></a>
+          <a href="#"><img src="assets/social-media-6.png" alt=""></a>
+        </div>
+        <button type="button" class="btn btn-primary" onclick="location.href='contact-page.html'"><i class="fa fa-paper-plane"></i> SEND DIRECT MESSAGE</button>
+      </div>
+    </section>
+
+    <!--FOOTER SECTION-->
+    <section id="footer">
+      <img src="assets/wave2.png" class="footer-img">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4 footer-box">
+            <img src="assets/LOGO5.png" alt="">
+            <p>Subscribe to any of our Social Media accounts to know the latest deets and upcoming projects that we might be doing.</p>
+          </div>
+          <div class="col-md-4 footer-box">
+            <p><b>WHERE TO FIND US</b></p>
+            <p><i class="fa fa-map-marker"></i> FEU Institute of Technology, Sampaloc</p>
+            <p><i class="fa fa-phone"></i> 09278434348</p>
+            <p><i class="fa fa-envelope-o"></i> 201811371@gmail.com</p>
+          </div>
+          <div class="col-md-4 footer-box">
+            <p><b>SUBSCRIBE TO OUR NEWSLETTER</b></p>
+            <input type="email" class="form-control" placeholder="Your Email">
+            <button type="button" class="btn btn-primary">Subscribe</button>
+          </div>
+        </div>
+        <hr>
+        <p class="copyright">Website Created by BeyondRaymond</p>
+      </div>
+      </div>
+    </section>
+    <!--SMOOTH SCROLL-->
+    <script src="smooth-scroll.js"></script>
+    <script>
+      var scroll = new SmoothScroll('a[href*="#"]');
+    </script>
+</body>
+</html>
